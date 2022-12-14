@@ -2,7 +2,7 @@ getHotPost();
 
 
 function getHotPost() {
-    const url1 = "http://localhost:3000/HotPostRent";
+    const url1 = "https://testing.moro.social/js/HotPostRent.json";
 fetch(url1)
   .then((response) => response.json()) // parse the JSON from the server
   .then(function(posts) {
