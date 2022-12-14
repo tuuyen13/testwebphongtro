@@ -29,7 +29,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="test">
+<body >
 
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
@@ -432,6 +432,16 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/PostRent.js"></script>
+    <script> 
+        // tạo hàm hiện thi icon sao theo số
+        function showStar(star){
+            var starHtml = "";
+            for(var i = 0; i <= star; i++){
+                starHtml += '<small class="fa fa-star text-primary"></small>';
+            }
+            return starHtml;
+        }
+    </script>
 
     
 </body>
