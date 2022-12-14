@@ -1,0 +1,63 @@
+{"HotPostRent": [
+    {
+        "id": 1,
+        "title": "Phòng trọ Việt Phạm",
+        "price": "2.6 triệu/tháng",
+        "shortDes":"Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn.",
+        "star":3,
+        "bed":3,
+        "bath":2,
+        "FB":"https://www.facebook.com/ngviet.0211",
+        "Zalo":"https://zalo.me/0978709247",
+        "info":"",
+        "address": "Địa chỉ: 18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí MinhHồ Chí Minh",
+        "description": "Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn. Nội thất gồm.: Ti vi, Giường, Máy lạnh, quạt máy, Toilet khép kín, vòi tắm Hoa sen nước nóng. Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. Giá 2,6 triệu / 1 Tháng. (cọc 1 tháng) Điện 3.500, Nước 80.000t",
+        "facilities": ["4 phòng ngủ", "3 phòng tắm", "nhà bếp", "máy lạnh", "ban công", "sân vườn", "camera an ninh"],
+        "contact": ["Nguyễn Thị Thanh Thủy", "090 123 4567", "https://www.facebook.com/ngviet.0211","https://zalo.me/0978709247"],
+        "image1":"img/room-1.jpg",
+        "image2":"img/room-2.jpg",
+        "image3":"img/room-3.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Phòng trọ Việt Phạm",
+        "price": "2.6 triệu/tháng",
+        "shortDes":"Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn.",
+        "star":3,
+        "bed":3,
+        "bath":2,
+        "FB":"https://www.facebook.com/ngviet.0211",
+        "Zalo":"https://zalo.me/0978709247",
+        "info":"",
+        "address": "Địa chỉ: 18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí MinhHồ Chí Minh",
+        "description": "Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn. Nội thất gồm.: Ti vi, Giường, Máy lạnh, quạt máy, Toilet khép kín, vòi tắm Hoa sen nước nóng. Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. Giá 2,6 triệu / 1 Tháng. (cọc 1 tháng) Điện 3.500, Nước 80.000t",
+        "facilities": ["4 phòng ngủ", "3 phòng tắm", "nhà bếp", "máy lạnh", "ban công", "sân vườn", "camera an ninh"],
+        "contact": ["Nguyễn Thị Thanh Thủy", "090 123 4567", "https://www.facebook.com/ngviet.0211","https://zalo.me/0978709247"],
+        "image1":"img/room-1.jpg",
+        "image2":"img/room-2.jpg",
+        "image3":"img/room-3.jpg",
+        "map": "https://www.google.com/maps/embed/v1/place?q=18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí Minh&amp;key=AIzaSyD6Coia3ssHYuRKJ2nDysWBdSlVlBCzKAw&amp;zoom=14"
+    },
+    {
+        "id": 3,
+        "title": "Phòng trọ Việt Phạm",
+        "price": "2.6 triệu/tháng",
+        "shortDes":"Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn.",
+        "star":4,
+        "bed":3,
+        "bath":2,
+        "FB":"https://www.facebook.com/ngviet.0211",
+        "Zalo":"https://zalo.me/0978709247",
+        "info":"",
+        "address": "Địa chỉ: 18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí MinhHồ Chí Minh",
+        "description": "Cho thuê phòng trọ Nhà 4 tầng Đúc như Khách Sạn. Nội thất gồm.: Ti vi, Giường, Máy lạnh, quạt máy, Toilet khép kín, vòi tắm Hoa sen nước nóng. Nhà mới Xây, Phòng mới, tiện nghi mới toàn bộ. Đường Kinh Dương Vương 50 mét ,Đường trước cửa rộng 5 mét =>> Yên tĩnh, thoáng mát. Cách AEON MALL Bình Tân 300 mét, cách Công viên Phú Lâm 600 mét. Giá 2,6 triệu / 1 Tháng. (cọc 1 tháng) Điện 3.500, Nước 80.000t",
+        "facilities": ["4 phòng ngủ", "3 phòng tắm", "nhà bếp", "máy lạnh", "ban công", "sân vườn", "camera an ninh"],
+        "contact": ["Nguyễn Thị Thanh Thủy", "090 123 4567", "https://www.facebook.com/ngviet.0211","https://zalo.me/0978709247"],
+        "image1":"img/room-1.jpg",
+        "image2":"img/room-2.jpg",
+        "image3":"img/room-3.jpg",
+        "map": "https://www.google.com/maps/embed/v1/place?q=18/5 Nguyễn Hới, Phường An Lạc, Quận Bình Tân, Hồ Chí Minh&amp;key=AIzaSyD6Coia3ssHYuRKJ2nDysWBdSlVlBCzKAw&amp;zoom=14"
+    }
+]
+}
+
