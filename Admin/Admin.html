@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MORO</title>
+    <link rel="shortcut icon" href="/img/logomoro.png" type="image/png" />
+     <!-- link fontawesome -->
+     <script src="https://kit.fontawesome.com/71fcac199f.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-logo">
+        <img srcset="./images/logo_real.png 2x" alt="Comapny logo" />
+        <div class="sidebar-close" id="sidebar-close">
+          <i class="bx bx-left-arrow-alt"></i>
+        </div>
+      </div>
+      <div class="sidebar-user">
+        <div class="sidebar-user-info">
+          <img
+            src="./images/admin.png"
+            alt="User picture"
+            class="profile-image"
+          />
+          <div class="sidebar-user-name">Lê Phước Toàn</div>
+        </div>
+        <a class="btn btn-outline" href="login.html">
+          <i class="bx bx-log-out bx-flip-horizontal"></i>
+        </a>
+      </div>
+      <!-- SIDEBAR MENU -->
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#" class="active">
+            <i class="bx bx-chart"></i>
+            <span>Thống kê</span>
+          </a>
+        </li>
+        <li>
+          <a href="PostManage.html">
+            <i class="bx bx-bar-chart"></i>
+            <span>Quản lý bài đăng</span>
+          </a>
+        </li>
+        <li class="sidebar-submenu">
+          <a href="#" class="sidebar-menu-dropdown">
+            <i class="bx bx-user-circle"></i>
+            <span>Tài khoản</span>
+            <div class="dropdown-icon"></div>
+          </a>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#"> Chỉnh sửa tài khoản </a>
+            </li>
+            <li>
+              <a href="#"> Cài đặt </a>
+            </li>
+            <li>
+              <a href="login.html"> Đăng xuất </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-mail-send"></i>
+            <span>mail</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-chat"></i>
+            <span>Tin nhắn</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-calendar"></i>
+            <span>Lịch</span>
+          </a>
+        </li>
+        <li class="sidebar-submenu">
+          <a href="#" class="sidebar-menu-dropdown">
+            <i class="bx bx-cog"></i>
+            <span>Cài đặt</span>
+            <div class="dropdown-icon"></div>
+          </a>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                darkmode
+                <span class="darkmode-switch"></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <div class="main-header">
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class="bx bx-menu-alt-right"></i>
+        </div>
+        <div class="main-title">Thống kê</div>
+      </div>
+      <div class="main-content">
+        <div class="row">
+          <div class="col-3">
+            <div class="box box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">Tổng số bài đăng</div>
+                <div class="counter-info">
+                  <div class="counter-count">1000</div>
+                  <i class="bx bx-bar-chart"></i>
+                </div>
+              </div>
+              <!-- END COUNTER -->
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="box box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">Tỷ lệ chuyển đổi</div>
+                <div class="counter-info">
+                  <div class="counter-count">40,4%</div>
+                  <i class="bx bx-pie-chart"></i>
+                </div>
+              </div>
+              <!-- END COUNTER -->
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="box box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">Tổng doanh thu</div>
+                <div class="counter-info">
+                  <div class="counter-count">200.000.000</div>
+                  <i class="bx bx-line-chart"></i>
+                </div>
+              </div>
+              <!-- END COUNTER -->
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="box box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">Tổng lượt truy cập</div>
+                <div class="counter-info">
+                  <div class="counter-count">10.000</div>
+                  <i class="bx bx-user"></i>
+                </div>
+              </div>
+              <!-- END COUNTER -->
+            </div>
+          </div>
+        </div>
+      <!-- BAR CHART -->
+        <div class="row">
+          <div class="col-3">
+            <div class="box f-height">
+              <div class="box-header" style="text-align: center;">Doanh thu sáu tháng đầu năm</div>
+              <h5 style="text-align: center; margin-top: 2px;">Đơn vị: triệu VND</h5>
+              <div class="box-body">
+                <div id="customer-chart1"></div>
+              </div>
+            </div>
+
+            
+          </div>
+          <div class="col-4">
+            <!-- CATEGORY CHART -->
+            <div class="box f-height">
+              <div class="box-header" style="margin-bottom: 5px;text-align: center;">Tổng số bài đăng mỗi dịch vụ</div>
+              <div class="box-body">
+                <div id="category-chart"></div>
+              </div>
+            </div>
+            <!-- END CATEGORY CHART -->
+          </div>
+          <div class="col-5">
+            <!-- CUSTOMERS CHART -->
+            <div class="box f-height">
+              <div class="box-header" style="text-align: center;">Lượt truy cập người dùng hàng tháng</div>
+              <h5 style="text-align: center; margin-top: 2px;">Đơn vị: ngàn lượt truy cập</h5>
+
+              <div class="box-body">
+                <div id="customer-chart"></div>
+              </div>
+            </div>
+            <!-- END CUSTOMERS CHART -->
+            
+             
+            
+
+
+          </div>
+          <div class="col-12">
+            
+            <!-- END ORDERS TABLE -->
+            <h2>Bài đăng nổi bật ở mỗi dịch vụ</h2>
+            <div class="row" style="margin-top: 10px;" >
+              <!-- TOP PRODUCT -->
+            <div class="box f-height" style="margin-left: 15px;">
+              <div class="box-header">Bài đăng cho thuê nổi bật</div>
+              <div class="box-body">
+                <ul class="product-list">
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/sample9.jpg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Phòng trọ Quận 11</div>
+                        <div class="text-second">Cho thuê</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">5000</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/sample9.jpg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Khải Hưng</div>
+                        <div class="text-second">Cho thuê</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">200</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/sample9.jpg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Chuyển nhà 24h</div>
+                        <div class="text-second">Cho thuê</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">1500</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/sample9.jpg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Liên Anh</div>
+                        <div class="text-second">Cho thuê</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">1000</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/sample9.jpg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Lưu ý khi thuê trọ</div>
+                        <div class="text-second">Cho thuê</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">900</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- TOP PRODUCT -->
+
+            <!-- TOP PRODUCT -->
+            <div class="box f-height" style="margin-left: 35px;">
+              <div class="box-header">Bài đăng ở ghép nổi bật</div>
+              <div class="box-body">
+                <ul class="product-list">
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/rm4.jpg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Hữu Nhật</div>
+                        <div class="text-second">Ở ghép</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">1000</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/rm1.jpg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Khải Hưng</div>
+                        <div class="text-second">Ở ghép</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">900</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/rm5.jpg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Tịnh Nghi Ngô</div>
+                        <div class="text-second">Ở ghép</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">650</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/rm3.jpg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Đình Văn</div>
+                        <div class="text-second">Ở ghép</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">500</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/rm2.jpg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Trân Trân Lý</div>
+                        <div class="text-second">Ở ghép</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">300</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- TOP PRODUCT -->
+
+            <!-- TOP PRODUCT -->
+            <div class="box f-height" style="margin-left: 35px;">
+              <div class="box-header">Bài đăng vận chuyển nổi bật</div>
+              <div class="box-body">
+                <ul class="product-list">
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/dlv1.png"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Chuyển nhà 24h</div>
+                        <div class="text-second">Vận chuyển</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">500</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/dlv2.png"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Việt Moving</div>
+                        <div class="text-second">Vận chuyển</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">400</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/dlv3.png"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Xe ba gác</div>
+                        <div class="text-second">Vận chuyển</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">250</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/dlv4.png"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Kiến Vàng</div>
+                        <div class="text-second">Vận chuyển</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">150</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/dlv5.png"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Thành Hưng house</div>
+                        <div class="text-second">Vận chuyển</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">100</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- TOP PRODUCT -->
+
+            <!-- TOP PRODUCT -->
+            <div class="box f-height" style="margin-left: 35px;">
+              <div class="box-header">Bài đăng dọn phòng nổi bật</div>
+              <div class="box-body">
+                <ul class="product-list">
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/c1.jpeg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Clean 4 U</div>
+                        <div class="text-second">Dọn phòng</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">555</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/c2.jpeg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">SWEEPZ</div>
+                        <div class="text-second">Dọn phòng</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">223</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/c3.jpeg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">KClean</div>
+                        <div class="text-second">Dọn phòng</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">135</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/c4.png"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Ánh Dương Xanh</div>
+                        <div class="text-second">Dọn phòng</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">110</div>
+                    </div>
+                  </li>
+                  <li class="product-list-item">
+                    <div class="item-info">
+                      <img
+                        src="images/c5.jpeg"
+                        alt="product image"
+                      />
+                      <div class="item-name">
+                        <div class="product-name">Cleaning Service</div>
+                        <div class="text-second">Dọn phòng</div>
+                      </div>
+                    </div>
+                    <div class="item-sale-info">
+                      <div class="text-second">Lượt truy cập</div>
+                      <div class="product-sales">90</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- TOP PRODUCT -->
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+    
+
+    <div class="overlay"></div>
+
+    <!-- SCRIPT -->
+    <!-- APEX CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- APP JS -->
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Bài Ở Ghép</title>
+    <link rel="stylesheet" href="css/styleform.css" />
+    <script
+      src="https://kit.fontawesome.com/682f180637.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), #ec9305),
+          url("img/backgroundform.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <form id="roommate">
+        <h1
+          style="
+            color: aliceblue;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+          "
+        >
+          ĐĂNG BÀI Ở GHÉP
+        </h1>
+
+        <div class="input-group">
+          <input type="text" id="name" required />
+          <label for="title"
+            ><i class="fa-regular fa-newspaper"></i> Tiêu đề bài đăng</label
+          >
+        </div>
+
+        <div class="row">
+          <div class="input-group">
+            <input type="text" id="gender" required />
+            <label for="gender"
+              ><i class="fa-solid fa-venus-mars"></i> Giới tính</label
+            >
+          </div>
+          <div class="input-group">
+            <input type="text" id="age" required />
+            <label for="age"
+              ><i class="fa-solid fa-arrow-up-9-1"></i> Tuổi</label
+            >
+          </div>
+          <div class="input-group">
+            <input type="text" id="people" required />
+            <label for="people"
+              ><i class="fa-solid fa-person"></i> Số người</label
+            >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group">
+            <input type="text" id="price" required />
+            <label for="price"
+              ><i class="fa-solid fa-money-bill"></i> Giá thuê</label
+            >
+          </div>
+          <div class="input-group">
+            <input type="text" id="area" required />
+            <label for="area"
+              ><i class="fa-solid fa-layer-group"></i> Diện tích</label
+            >
+          </div>
+          <div class="input-group">
+            <input type="text" id="address" required />
+            <label for="address"
+              ><i class="fa-solid fa-location-dot"></i> Địa điểm</label
+            >
+          </div>
+        </div>
+        <div class="input-group">
+          <textarea id="require" rows="3" required></textarea>
+          <label for="require"
+            ><i class="fa-sharp fa-solid fa-circle-info"></i> Yêu cầu ở
+            ghép</label
+          >
+        </div>
+        <div class="input-group">
+          <textarea id="description" rows="5" required></textarea>
+          <label for="description"
+            ><i class="fa-solid fa-clipboard"></i> Mô tả chi tiết</label
+          >
+        </div>
+        <div class="input-group">
+            <h5 style="color: aliceblue;font-size: 15px;font-weight: bolder;">Cập nhật hình ảnh mô tả</h5>
+
+          <label for="files"></label>
+          <input
+            type="file"
+            id="files"
+            multiple="multiple"
+            accept="image/jpeg, image/png, image/jpg"
+          />
+          <output style="display: flex; flex-wrap: wrap" id="result"></output>
+          <script src="js/form.js"></script>
+        </div>
+        <div class="container">
+          <button type="button" class="btn" onclick="openPopup()">
+            <i class="fa-solid fa-paper-plane"></i>GỬI
+          </button>
+          <div class="popup" id="popup">
+            <i class="fa-solid fa-upload"></i>
+            <h2>Đang chờ duyệt</h2>
+            <p style="font-size: 16px">
+              Bạn đã hoàn tất nội dung bài đăng. Hệ thống đang kiểm duyệt nội
+              dung bài đăng của bạn.
+            </p>
+            <button type="button" onclick="window.location.href='index.html'">
+              Quay lại trang chủ
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+      let popup = document.getElementById("popup");
+      function openPopup() {
+        if (document.getElementById("name").value == "") {
+          alert("Vui lòng nhập Tiêu đề bài đăng!");
+          document.getElementById("name").focus();
+          return;
+        }
+
+        if (document.getElementById("gender").value == "") {
+          alert("Vui lòng nhập Giới tính!");
+          document.getElementById("gender").focus();
+          return;
+        }
+
+        if (document.getElementById("age").value == "") {
+          alert("Vui lòng nhập Tuổi!");
+          document.getElementById("age").focus();
+          return;
+        }
+        if (!Number.isInteger(Number(document.getElementById("age").value))) {
+          document.getElementById("age").value = "";
+          alert("Vui lòng nhập đúng định dạng số (Tuổi)");
+          document.getElementById("age").focus();
+          return;
+        }
+
+        if (document.getElementById("people").value == "") {
+          alert("Vui lòng nhập Số người!");
+          document.getElementById("people").focus();
+          return;
+        }
+        if (!Number.isInteger(Number(document.getElementById("people").value))) {
+          document.getElementById("people").value = "";
+          alert("Vui lòng nhập đúng định dạng số (Số người)");
+          document.getElementById("people").focus();
+          return;
+        }
+
+        if (document.getElementById("price").value == "") {
+          alert("Vui lòng nhập Giá thuê!");
+          document.getElementById("price").focus();
+          return;
+        }
+       
+
+        if (document.getElementById("area").value == "") {
+          alert("Vui lòng nhập Diện tích!");
+          document.getElementById("area").focus();
+          return;
+        }
+
+        if (document.getElementById("address").value == "") {
+          alert("Vui lòng nhập Địa điểm!");
+          document.getElementById("address").focus();
+          return;
+        }
+
+        if (document.getElementById("require").value == "") {
+          alert("Vui lòng nhập Yêu cầu ở ghép!");
+          document.getElementById("require").focus();
+          return;
+        }
+
+        if (document.getElementById("description").value == "") {
+          alert("Vui lòng nhập Mô tả chi tiết!");
+          document.getElementById("description").focus();
+          return;
+        }
+
+        if (document.getElementById("files").value == "") {
+          alert("Vui lòng thêm hình!");
+          document.getElementById("files").focus();
+          return;
+        }
+
+        popup.classList.add("open-popup");
+        clearform();
+      }
+
+      function clearform() {
+        document.getElementById("roommate").reset();
+        document.getElementById("result").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

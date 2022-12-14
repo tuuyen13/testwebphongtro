@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="css/loginsignin.css" />
+    <script
+      src="https://kit.fontawesome.com/682f180637.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section >
+      <!--Bắt Đầu Phần Hình Ảnh-->
+      <div class="img-bg">
+          <img src="img/signinlogin.jpg" >
+      </div>
+      <!--Kết Thúc Phần Hình Ảnh-->
+      <!--Bắt Đầu Phần Nội Dung-->
+      <div class="noi-dung">
+          <div class="form1">
+              <h2>Đăng nhập</h2>
+              <form id = "login">
+
+                  <div class="input-form">
+                      <span>Email hoặc số điện thoại</span>
+                      <input type="text" id="email" required>
+                  </div>
+
+                  <div class="input-form">
+                      <span>Mật Khẩu</span>
+                      <input type="password" id="password" required>
+                  </div>
+
+                  <div class="nho-dang-nhap">
+                      <label><input type="checkbox" name=""> Lưu thông tin đăng nhập</label>
+                  </div>
+
+                  <div class="input-form">
+                      <input type="button" value="Đăng Nhập" onclick="openPopup()">
+                  </div>
+                  <div class="input-form">
+                      <p><a href="ForgotPassword.html">Quên Mật Khẩu?</a> hoặc <a href="register.html">Đăng Ký</a></p>
+                  </div>
+                      
+                </form>
+
+                
+
+          </div>
+      </div>
+      <!--Kết Thúc Phần Nội Dung-->
+  </section>
+  <div class="popup" id="popup"></div>
+
+<script>
+let popup = document.getElementById("popup");
+function openPopup() {
+
+if (document.getElementById("email").value == "") {
+  alert("Vui lòng nhập Email hoặc số điện thoại");
+  document.getElementById("email").focus();
+  return;
+}
+
+if (document.getElementById("password").value == "") {
+  alert("Vui lòng nhập mật khẩu!");
+  document.getElementById("password").focus();
+  return;
+}
+
+popup.classList.add("open-popup");
+        clearform();
+      }
+
+      function clearform() {
+        document.getElementById("login").reset();
+        // hiện thị thông báo đăng nhập thành công
+        alert("Đăng nhập thành công");
+        // chuyển qua trang chủ
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MORO</title>
+    <link rel="shortcut icon" href="/img/logomoro.png" type="image/png" />
+     <!-- link fontawesome -->
+     <script src="https://kit.fontawesome.com/71fcac199f.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-logo">
+        <img srcset="./images/logo_real.png 2x" alt="Comapny logo" />
+        <div class="sidebar-close" id="sidebar-close">
+          <i class="bx bx-left-arrow-alt"></i>
+        </div>
+      </div>
+      <div class="sidebar-user">
+        <div class="sidebar-user-info">
+          <img
+            src="./images/admin.png"
+            alt="User picture"
+            class="profile-image"
+          />
+          <div class="sidebar-user-name">Lê Phước Toàn</div>
+        </div>
+        <a class="btn btn-outline" href="login.html">
+          <i class="bx bx-log-out bx-flip-horizontal"></i>
+        </a>
+      </div>
+      <!-- SIDEBAR MENU -->
+      <ul class="sidebar-menu">
+        <li>
+          <a href="Admin.html">
+            <i class="bx bx-chart"></i>
+            <span>Thống kê</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+            <i class="bx bx-bar-chart"></i>
+            <span>Quản lý bài đăng</span>
+          </a>
+        </li>
+        
+        <li class="sidebar-submenu">
+          <a href="#" class="sidebar-menu-dropdown">
+            <i class="bx bx-user-circle"></i>
+            <span>Tài khoản</span>
+            <div class="dropdown-icon"></div>
+          </a>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#"> Chỉnh sửa tài khoản </a>
+            </li>
+            <li>
+              <a href="#"> Cài đặt </a>
+            </li>
+            <li>
+              <a href="login.html"> Đăng xuất </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-mail-send"></i>
+            <span>mail</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-chat"></i>
+            <span>Tin nhắn</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-calendar"></i>
+            <span>Lịch</span>
+          </a>
+        </li>
+        <li class="sidebar-submenu">
+          <a href="#" class="sidebar-menu-dropdown">
+            <i class="bx bx-cog"></i>
+            <span>Cài đặt</span>
+            <div class="dropdown-icon"></div>
+          </a>
+          <ul class="sidebar-menu sidebar-menu-dropdown-content">
+            <li>
+              <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                darkmode
+                <span class="darkmode-switch"></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <div class="main-header">
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class="bx bx-menu-alt-right"></i>
+        </div>
+        <div class="main-title">Quản lý bài đăng</div>
+      </div>
+      <div class="main-content">
+        <div class="row">
+          <div class="col-3">
+            <div class="box box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">Tổng số bài đăng cho thuê</div>
+                <div class="counter-info">
+                  <div class="counter-count">1000</div>
+                  <i class="fa-solid fa-house" style="color: #FEA116;"></i>
+                </div>
+              </div>
+              <!-- END COUNTER -->
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="box box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">Tổng số bài đăng ở ghép</div>
+                <div class="counter-info">
+                  <div class="counter-count">500</div>
+                  <i class="fa-solid fa-user-group" style="color: #FEA116;"></i>
+                </div>
+              </div>
+              <!-- END COUNTER -->
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="box box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">Tổng số bài đăng vận chuyển </div>
+                <div class="counter-info">
+                  <div class="counter-count">200</div>
+                  <i class="fa-solid fa-truck" style="color: #FEA116;"></i>
+                </div>
+              </div>
+              <!-- END COUNTER -->
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="box box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">Tổng số bài đăng dọn phòng </div>
+                <div class="counter-info">
+                  <div class="counter-count">100</div>
+                  <i class="fa-sharp fa-solid fa-broom" style="color: #FEA116;"></i>
+                </div>
+              </div>
+              <!-- END COUNTER -->
+            </div>
+          </div>
+        </div>       
+
+            
+            <!-- MOTEL ROOMS TABLE -->
+            <div class="box" style="margin-top: 25px;">
+              <div class="box-header">Dịch vụ cho thuê</div>
+              <div class="box-body overflow-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Người đăng</th>
+                      <th>Ngày</th>
+                      <th>Tình trạng bài đăng</th>
+                      <th>Gói dịch vụ</th>
+                      <th>Doanh thu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#1000</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/admin.png"
+                            alt="user image"
+                          />
+                          <span>Việt Hoàng</span>
+                        </div>
+                      </td>
+                      <td>2022-01-19</td>
+                      <td>
+                        <span class="order-status service-pending"> Chờ duyệt</span>
+                      </td>
+                      <td>
+                        <div class="payment-status service1">
+                          <div class="dot"></div>
+                          <span> Gói 30 ngày ||Tin nổi bật</span>
+                        </div>
+                      </td>
+                      <td>1.119.000</td>
+                    </tr>
+                    <tr>
+                      <td>#1001</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/admin.png"
+                            alt="user image"
+                          />
+                          <span>Yến Nhi</span>
+                        </div>
+                      </td>
+                      <td>2022-01-19</td>
+                      <td>
+                        <span class="order-status service-pending">
+                          Chờ duyệt
+                        </span>
+                      </td>
+                      <td>
+                        <div class="payment-status service1">
+                          <div class="dot"></div>
+                          <span>Gói 07 ngày ||Tin nổi bật</span>
+                        </div>
+                      </td>
+                      <td>269.000 VNĐ</td>
+                    </tr>                   
+                    <tr>
+                      <td>#1004</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/admin.png"
+                            alt="user image"
+                          />
+                          <span>Khải Ngân</span>
+                        </div>
+                      </td>
+                      <td>2022-01-19</td>
+                      <td>
+                        <span class="order-status service-passed">
+                          Đã duyệt
+                        </span>
+                      </td>
+                      <td>
+                        <div class="payment-status service1">
+                          <div class="dot"></div>
+                          <span>Gói 30 ngày ||Tin thường</span>
+                        </div>
+                      </td>
+                      <td>119.000 VNĐ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- END MOTEL ROOM TABLE -->
+
+              <!-- ROOMATES TABLE -->
+            <div class="box" style="margin-top: 25px;">
+              <div class="box-header">Dịch vụ ở ghép</div>
+              <div class="box-body overflow-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Người đăng</th>
+                      <th>Ngày</th>
+                      <th>Tình trạng bài đăng</th>
+                      <th>Gói dịch vụ</th>
+                      <th>Doanh thu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#1000</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/rm3.jpg"
+                            alt="user image"
+                          />
+                          <span>Nguyên Huy</span>
+                        </div>
+                      </td>
+                      <td>2022-01-19</td>
+                      <td>
+                        <span class="order-status service-pending"> Chờ duyệt</span>
+                      </td>
+                      <td>
+                        <div class="payment-status service1">
+                          <div class="dot"></div>
+                          <span>Gói 30 ngày ||Tin nổi bật</span>
+                        </div>
+                      </td>
+                      <td>469.000 VNĐ</td>
+                    </tr>
+                    <tr>
+                      <td>#1001</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/rm5.jpg"
+                            alt="user image"
+                          />
+                          <span>Nhi Linh</span>
+                        </div>
+                      </td>
+                      <td>2022-01-19</td>
+                      <td>
+                        <span class="order-status service-passed">
+                          Đã duyệt
+                        </span>
+                      </td>
+                      <td>
+                        <div class="payment-status service2">
+                          <div class="dot"></div>
+                          <span>Gói 07 ngày ||Tin thường</span>
+                        </div>
+                      </td>
+                      <td>18.000 VNĐ</td>
+                    </tr>                   
+                    <tr>
+                      <td>#1002</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/rm2.jpg"
+                            alt="user image"
+                          />
+                          <span>Quỳnh Như</span>
+                        </div>
+                      </td>
+                      <td>2022-01-19</td>
+                      <td>
+                        <span class="order-status service-passed">
+                          Đã duyệt
+                        </span>
+                      </td>
+                      <td>
+                        <div class="payment-status service2">
+                          <div class="dot"></div>
+                          <span>Gói 30 ngày ||Tin thường</span>
+                        </div>
+                      </td>
+                      <td>59.000 VNĐ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- END ROOMATES TABLE -->
+
+             <!-- DELIVERY TABLE -->
+             <div class="box" style="margin-top: 25px;">
+              <div class="box-header">Dịch vụ vận chuyển</div>
+              <div class="box-body overflow-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Người đăng</th>
+                      <th>Ngày</th>
+                      <th>Tình trạng bài đăng</th>
+                      <th>Gói dịch vụ</th>
+                      <th>Doanh thu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#1000</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/dlv1.png"
+                            alt="user image"
+                          />
+                          <span>Chuyển nhà 24h</span>
+                        </div>
+                      </td>
+                      <td>2022-12-28</td>
+                      <td>
+                        <span class="order-status service-passed"> Đã duyệt</span>
+                      </td>
+                      <td>
+                        <div class="payment-status service2">
+                          <div class="dot"></div>
+                          <span>Đối tác vận chuyển</span>
+                        </div>
+                      </td>
+                      <td>20.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>#1001</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/dlv2.png"
+                            alt="user image"
+                          />
+                          <span>Việt Moving</span>
+                        </div>
+                      </td>
+                      <td>2022-11-21</td>
+                      <td>
+                        <span class="order-status service-passed">
+                         Đã duyệt
+                        </span>
+                      </td>
+                      <td>
+                        <div class="payment-status service2">
+                          <div class="dot"></div>
+                          <span>Đối tác vận chuyển</span>
+                        </div>
+                      </td>
+                      <td>15.000.000</td>
+                    </tr>                   
+                    <tr>
+                      <td>#1002</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/dlv3.png"
+                            alt="user image"
+                          />
+                          <span>Xe ba gác</span>
+                        </div>
+                      </td>
+                      <td>2022-12-19</td>
+                      <td>
+                        <span class="order-status service-pending">
+                          Chờ duyệt
+                        </span>
+                      </td>
+                      <td>
+                        <div class="payment-status service2">
+                          <div class="dot"></div>
+                          <span>Đối tác vận chuyển</span>
+                        </div>
+                      </td>
+                      <td>5.000.000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- END DELIVERY TABLE -->
+
+             <!-- CLEANING TABLE -->
+             <div class="box" style="margin-top: 25px;">
+              <div class="box-header">Dịch vụ dọn phòng</div>
+              <div class="box-body overflow-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Người đăng</th>
+                      <th>Ngày</th>
+                      <th>Tình trạng bài đăng</th>
+                      <th>Gói dịch vụ</th>
+                      <th>Doanh thu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#1000</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/c1.jpeg"
+                            alt="user image"
+                          />
+                          <span>Clean 4 U
+                          </span>
+                        </div>
+                      </td>
+                      <td>2022-01-19</td>
+                      <td>
+                        <span class="order-status service-passed"> Đã duyệt</span>
+                      </td>
+                      <td>
+                        <div class="payment-status service1">
+                          <div class="dot"></div>
+                          <span>Đối tác dọn phòng</span>
+                        </div>
+                      </td>
+                      <td>$123.45</td>
+                    </tr>
+                    <tr>
+                      <td>#1001</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/c2.jpeg"
+                            alt="user image"
+                          />
+                          <span>SWEEPZ</span>
+                        </div>
+                      </td>
+                      <td>2022-01-19</td>
+                      <td>
+                        <span class="order-status service-pending">
+                          Chờ duyệt
+                        </span>
+                      </td>
+                      <td>
+                        <div class="payment-status service1">
+                          <div class="dot"></div>
+                          <span>Đối tác dọn phòng</span>
+                        </div>
+                      </td>
+                      <td>$123.45</td>
+                    </tr>                   
+                    <tr>
+                      <td>#1004</td>
+                      <td>
+                        <div class="order-owner">
+                          <img
+                            src="./images/c4.png"
+                            alt="user image"
+                          />
+                          <span>Ánh Dương Xanh
+                          </span>
+                        </div>
+                      </td>
+                      <td>2022-01-19</td>
+                      <td>
+                        <span class="order-status service-pending">
+                         Chờ duyệt
+                        </span>
+                      </td>
+                      <td>
+                        <div class="payment-status service1">
+                          <div class="dot"></div>
+                          <span>Đối tác dọn phòng</span>
+                        </div>
+                      </td>
+                      <td>$123.45</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- END CLEANING TABLE -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <div class="overlay"></div>
+
+    <!-- SCRIPT -->
+    <!-- APEX CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- APP JS -->
+    <script src="./js/admin.js"></script>
+  </body>
+</html>
