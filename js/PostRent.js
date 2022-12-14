@@ -46,7 +46,7 @@ function Details(id) {
     // lưu id vào localstorage
     localStorage.setItem("ID_POST", id);
     // chuyển trang
-    window.location.href = "booking detail 1 copy.html";
+    window.location.href = "booking-detail-1-copy.html";
     }
 
 
